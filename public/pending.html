@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pending Tasks</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <aside>
+    <h2>TaskFlow</h2>
+    <nav>
+      <a href="dashboard.html">🏠 Dashboard</a>
+      <a href="add-task.html">➕ Add Task</a>
+      <a href="completed.html">✅ Completed</a>
+      <a href="pending.html" class="active">⚠️ Pending</a>
+      <a href="upcoming.html">📅 Upcoming</a>
+    <!-- <a href="#" >📈 Reports</a> -->
+    <a href="profile.html" id="profileBtn" >👤 Profile</a>
+      <a href="#" id="logoutBtn">🚪 Logout</a>
+    </nav>
+  </aside>
+
+  <main>
+    <header>
+      <h1>Pending Tasks</h1>
+    </header>
+
+    <section id="tasksContainer" class="tasks-container"></section>
+
+    <footer>&copy; 2025 TaskFlow</footer>
+  </main>
+
+  <script src="pending.js"></script>
+</body>
+</html>

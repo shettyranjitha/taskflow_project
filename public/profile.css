@@ -1,0 +1,156 @@
+/* 🌈 Background Style */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* 🧱 Profile Container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* 🪟 Profile Box */
+.profile-box {
+  background: #fff;
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  width: 380px;
+  text-align: center;
+}
+
+.profile-box h1 {
+  color: #5b3cc4;
+  margin-bottom: 10px;
+  font-size: 1.8rem;
+}
+
+.profile-box h2 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.profile-box p {
+  color: #555;
+  margin: 6px 0;
+  font-size: 0.95rem;
+}
+
+/* 🔘 Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: #5b3cc4;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  background: #4527a0;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff4b5c;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #d63b4a;
+}
+
+/* ✏️ Modal Styling */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  width: 360px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content h3 {
+  color: #5b3cc4;
+  margin-bottom: 15px;
+}
+
+.input-group {
+  margin-bottom: 18px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #5b3cc4;
+  box-shadow: 0 0 5px rgba(91, 60, 196, 0.3);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.cancel-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #999;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.cancel-btn:hover {
+  background: #777;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}

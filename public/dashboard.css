@@ -1,0 +1,182 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  background-color: #f5f6fa;
+}
+
+/* Sidebar */
+aside {
+  width: 220px;
+  background-color: #2f3640;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+aside h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+aside nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 12px 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  transition: background 0.3s;
+  display: block;
+}
+
+aside nav a:hover {
+  background-color: #353b48;
+}
+
+/* Main content */
+main {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+.search-container {
+  display: flex;
+  gap: 10px;
+}
+
+.search-container input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 250px;
+}
+
+.search-container button {
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2f3640;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Add Task Form */
+.add-task-section {
+  margin-bottom: 30px;
+}
+
+.add-task-section form {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.add-task-section input,
+.add-task-section button {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.add-task-section button {
+  background-color: #2f3640;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Tasks container */
+.tasks-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.item-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  flex: 1 1 250px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.item-card.completed {
+  border-left: 5px solid green;
+}
+
+.item-card.overdue {
+  border-left: 5px solid red;
+}
+
+.item-card .btn-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.item-card button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background-color: #e84118;
+  color: #fff;
+}
+
+.btn-toggle {
+  background-color: #44bd32;
+  color: #fff;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+  body {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  aside nav {
+    display: flex;
+    gap: 10px;
+  }
+  main {
+    padding: 20px;
+  }
+  .add-task-section form {
+    flex-direction: column;
+  }
+}
+ 

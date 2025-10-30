@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Profile | TaskFlow</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="profile.css" />
+</head> 
+<body>
+  <div class="profile-container">
+    <div class="profile-box">
+      <h1>My Profile</h1>
+      <h2 id="profileName">Loading...</h2>
+      <p id="profileEmail">Email: —</p>
+      <p id="profileJoined">Joined: —</p>
+      <button id="editProfileBtn" class="btn">✏️ Edit Profile</button>
+      <button id="logoutBtn" class="logout-btn">🚪 Logout</button>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div id="editModal" class="modal">
+    <div class="modal-content">
+      <h3>Edit Profile</h3>
+      <form id="editForm">
+        <div class="input-group">
+          <input type="text" id="editName" placeholder="Full Name" required />
+        </div>
+        <div class="input-group">
+          <input type="email" id="editEmail" placeholder="Email" required />
+        </div>
+        <div class="input-group">
+          <input type="password" id="editPassword" placeholder="New Password (optional)" />
+        </div>
+        <div class="modal-actions">
+          <button type="submit" class="btn">💾 Save</button>
+          <button type="button" id="cancelEdit" class="cancel-btn">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside>
+    <h2>TaskFlow</h2>
+    <nav>
+    <a href="dashboard.html" id="dashboardBtn">🏠 Dashboard</a>
+    <a href="add-task.html">➕ Add Task</a>
+    <a href="dashboard.html">🕒 My Tasks</a>
+    <a href="completed.html" id="completedBtn">✅ Completed</a>
+    <a href="pending.html" id="pendingBtn">⚠️ Pending</a>
+    <a href="upcoming.html" id="upcomingBtn">📅 Upcoming</a>
+    <!-- <a href="#" >📈 Reports</a> -->
+    <a href="profile.html" id="profileBtn" >👤 Profile</a>
+      <!-- <a href="#">Dashboard</a> -->
+      <!-- <a href="#">Tasks</a> -->
+      <!-- <a href="#">Add Task</a> -->
+      <!-- <a href="#">Projects</a> -->
+      <!-- <a href="#">Reports</a> -->
+      <a href="#" id="logoutBtn">🚪 Logout</a>
+    </nav>
+  </aside>
+
+  <!-- Main content -->
+  <main>
+    <!-- Navbar -->
+    <header>
+      <h1>Dashboard</h1>
+      <div class="search-container">
+        <input type="text" id="searchKeyword" placeholder="Search tasks..." />
+        <button id="searchBtn">Search</button>
+      </div>
+    </header>
+
+    <!-- Add Task Form -->
+    <section class="add-task-section">
+      <form id="addTaskForm">
+        <!-- <input type="text" id="taskTitle" placeholder="Task title" required> -->
+        <!-- <input type="text" id="taskDesc" placeholder="Description"> -->
+        <!-- <input type="date" id="taskDueDate"> -->
+        <button type="text">Task Lists</button>
+      </form>
+    </section>
+
+    <!-- Tasks container -->
+    <section id="tasksContainer" class="tasks-container">
+      <!-- JS will dynamically populate tasks here -->
+    </section>
+
+    <footer>
+      &copy; 2025 TaskFlow. All rights reserved.
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
